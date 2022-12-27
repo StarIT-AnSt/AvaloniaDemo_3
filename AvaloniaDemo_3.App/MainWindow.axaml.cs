@@ -11,7 +11,7 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
-    private void ButtonClear_OnClick(object? sender, RoutedEventArgs e)
+    private void Clear_OnClick(object? sender, RoutedEventArgs e)
     {
         Clear();
         StatusBar.Text = "Cleared!";
@@ -23,7 +23,7 @@ public partial class MainWindow : Window
         InputLastName.Clear();
     }
 
-    private void ButtonSave_OnClick(object? sender, RoutedEventArgs e)
+    private void Save_OnClick(object? sender, RoutedEventArgs e)
     {
         var first = InputFirstName.Text;
         var last = InputLastName.Text;

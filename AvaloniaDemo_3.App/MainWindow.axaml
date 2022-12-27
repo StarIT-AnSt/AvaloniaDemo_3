@@ -16,7 +16,10 @@
     <Grid RowDefinitions="Auto, *, Auto"
           Classes="Wrapper">
         <StackPanel Grid.Row="0">
-            <TextBlock Text="Menu"/>
+            <Menu>
+                <MenuItem Header="_Save" Click="Save_OnClick" HotKey="Ctrl+S" />
+                <MenuItem Header="_Clear" Click="Clear_OnClick" HotKey="Ctrl+D" />
+            </Menu>
         </StackPanel>
 
         <Grid Grid.Row="1"
@@ -48,12 +51,12 @@
                 <StackPanel Orientation="Horizontal"
                             Classes="Buttons">
                     <Button x:Name="ButtonClear"
-                            Content="Clear"
-                            Click="ButtonClear_OnClick"
+                            Content="_Clear"
+                            Click="Clear_OnClick"
                             Classes="Clear"/>
                     <Button x:Name="ButtonSave"
-                            Content="Save"
-                            Click="ButtonSave_OnClick"
+                            Content="_Save"
+                            Click="Save_OnClick"
                             Classes="Save"/>
                 </StackPanel>
             </StackPanel>
